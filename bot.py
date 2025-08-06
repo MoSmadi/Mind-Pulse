@@ -5,6 +5,12 @@ from dotenv import load_dotenv
 from sentiment import analyze_sentiment
 from summary import log_mood, get_today_summary
 from consent import add_consent, has_consented, remove_consent
+from discord.ext import tasks
+from consent import load_consents
+from summary import generate_weekly_report
+from datetime import datetime
+import asyncio
+
 
 
 load_dotenv()
@@ -18,6 +24,27 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print(f'{client.user} is online and connected to Discord!')
+    send_weekly_reports.start()
+
+
+# @tasks.loop(hours=24)
+@tasks.loop(seconds=10)  # for test purposes only
+async def send_weekly_reports():
+    # Only run on Sunday
+    # if datetime.utcnow().weekday() != 6:  # Sunday = 6
+    if False:  # disable day check just for test
+        return
+
+    print("📤 Sending weekly reports...")
+    for user_id in load_consents():
+        try:
+            user = await client.fetch_user(int(user_id))
+            report = generate_weekly_report(user_id)
+            await user.send(report)
+            print(f"✅ Sent weekly report to {user.name}")
+        except Exception as e:
+            print(f"❌ Failed to send weekly report to {user_id}: {e}")
+
 
 @client.event
 async def on_message(message):
