@@ -1,0 +1,93 @@
+[
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:16:37.786230",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:03.064211",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:16.667131",
+    "content": "I'm feeling very frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:22.621466",
+    "content": "I'm feeling very very very very very frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.5768
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:42:08.956707",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:28.379095",
+    "content": "I am happy bro",
+    "sentiment": "positive",
+    "score": 0.5719
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:32.186088",
+    "content": "I am sad",
+    "sentiment": "negative",
+    "score": -0.4767
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:35.892671",
+    "content": "I have a bug",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:41.434090",
+    "content": "I have a new feature",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:48.460790",
+    "content": "I have bad team",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:52.992410",
+    "content": "I have good team",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:45:17.478955",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:51:30.000122",
+    "content": "https://platform.openai.com/api-keys",
+    "sentiment": "neutral",
+    "score": 0.0
+  }
+]
