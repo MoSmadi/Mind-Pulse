@@ -89,5 +89,264 @@
     "content": "https://platform.openai.com/api-keys",
     "sentiment": "neutral",
     "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:54:51.107148",
+    "content": "\u062a\u062f\u062e\u0644\u0648\u0627 \u0643\u0648\u0644 \u0633\u0631\u064a\u0639\u061f",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:55:10.099258",
+    "content": "voice channel @here",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:56:28.578811",
+    "content": "<@977852503070740490> we are hearing u",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:56:42.641107",
+    "content": "zoom",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:57:12.826020",
+    "content": "https://restaurant365.zoom.us/j/96020017009",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:04:27.704643",
+    "content": "I\u2019m having the best day ever!",
+    "sentiment": "positive",
+    "score": 0.6696
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:06:57.019878",
+    "content": "mabdulkareem@restaurant365.com",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:07:02.316415",
+    "content": "msmadi@restaurant365.com.",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:07:15.348957",
+    "content": "<@957722964676214856> p\u062d\u0637 \u062a\u0627\u0639\u0643",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:01.859188",
+    "content": "bad message",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:04.608425",
+    "content": "normal message",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:07.827666",
+    "content": "hahahahah",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:09.554952",
+    "content": "memememem",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:16.264714",
+    "content": "f*******",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:15:16.014206",
+    "content": "f******* you",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:16:02.003173",
+    "content": "real-time detection of harmful behavior + instant calming DMs",
+    "sentiment": "positive",
+    "score": 0.4019
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:16:14.994026",
+    "content": "Detect if a message is:\n\n\u26a0\ufe0f Bullying, toxic, or aggressively negative\n\nBased on keywords + very low sentiment score",
+    "sentiment": "negative",
+    "score": -0.9061
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:19:53.944169",
+    "content": "You\u2019re completely useless, I\u2019m done with this crap",
+    "sentiment": "negative",
+    "score": -0.7264
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:20:24.088344",
+    "content": "You\u2019re completely useless, I\u2019m done with this crap",
+    "sentiment": "negative",
+    "score": -0.7264
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:33:42.577104",
+    "content": "<@994959988910985277>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:39:15.541485",
+    "content": "this could have been an email",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:18.650690",
+    "content": "hello",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:24.743747",
+    "content": "you are bad",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:38.198779",
+    "content": "anyting is better",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:47.211704",
+    "content": "can we do better?",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:39:49.911404",
+    "content": "what a bloody code!",
+    "sentiment": "negative",
+    "score": -0.4926
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:01.589537",
+    "content": "shit",
+    "sentiment": "negative",
+    "score": -0.5574
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:36.546990",
+    "content": "oh god please no",
+    "sentiment": "neutral",
+    "score": 0.296
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:40:38.614397",
+    "content": "I love you",
+    "sentiment": "positive",
+    "score": 0.6369
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:40.351513",
+    "content": "what a good day",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:40:40.735826",
+    "content": "Good morning!",
+    "sentiment": "positive",
+    "score": 0.4926
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:43.791637",
+    "content": "its sunny today",
+    "sentiment": "positive",
+    "score": 0.4215
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:40:48.653116",
+    "content": "what agood code",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:40:51.075361",
+    "content": "Let's rock the day! Keep it up",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:54.203877",
+    "content": "i love my wife",
+    "sentiment": "positive",
+    "score": 0.6369
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:41:05.708749",
+    "content": "i hate my wife",
+    "sentiment": "negative",
+    "score": -0.5719
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:50:09.885349",
+    "content": "here <@994959988910985277>",
+    "sentiment": "neutral",
+    "score": 0.0
   }
 ]

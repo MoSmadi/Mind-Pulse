@@ -2,16 +2,15 @@ import json
 import os
 from datetime import datetime, timedelta
 from collections import Counter
-from dotenv import load_dotenv
 import openai
+from dotenv import load_dotenv
 
-# Load API key
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 MOOD_LOG_FILE = "mood_logs.json"
 
-# ------------------ Persistence ------------------
+# -------------------- Storage --------------------
 
 def load_logs():
     if not os.path.exists(MOOD_LOG_FILE):
@@ -22,8 +21,6 @@ def load_logs():
 def save_logs(logs):
     with open(MOOD_LOG_FILE, "w") as f:
         json.dump(logs, f, indent=2)
-
-# ------------------ Logging ------------------
 
 def log_mood(user_id, text, sentiment_result):
     logs = load_logs()
@@ -36,25 +33,7 @@ def log_mood(user_id, text, sentiment_result):
     })
     save_logs(logs)
 
-# ------------------ Summaries ------------------
-
-def get_today_summary():
-    logs = load_logs()
-    today = datetime.utcnow().date()
-    counts = Counter()
-
-    for entry in logs:
-        timestamp = datetime.fromisoformat(entry["timestamp"])
-        if timestamp.date() == today:
-            counts[entry["sentiment"]] += 1
-
-    total = sum(counts.values())
-    if total == 0:
-        return "No mood data recorded today yet."
-
-    lines = [f"{label.capitalize()}: {count} ({(count/total)*100:.0f}%)"
-             for label, count in counts.items()]
-    return "**Team Mood Summary** (Today):\n" + "\n".join(lines)
+# -------------------- Weekly Summary --------------------
 
 def get_weekly_logs(user_id):
     logs = load_logs()
@@ -64,59 +43,52 @@ def get_weekly_logs(user_id):
         if entry["user_id"] == user_id and datetime.fromisoformat(entry["timestamp"]) >= one_week_ago
     ]
 
-# ------------------ Weekly Report ------------------
-
 def generate_weekly_report(user_id):
     logs = get_weekly_logs(user_id)
     if not logs:
         return "No messages logged for you in the past 7 days."
 
-    mood_counts = Counter(log["sentiment"] for log in logs)
+    # Mood distribution
+    mood_counts = Counter(entry["sentiment"] for entry in logs)
     total = sum(mood_counts.values())
-
     mood_summary = "\n".join([
         f"- {label.capitalize()}: {count} ({(count/total)*100:.0f}%)"
         for label, count in mood_counts.items()
     ])
 
-    # Extract key moments for feedback
-    flagged = []
-    for log in logs:
-        if log["sentiment"] == "negative" or log["score"] < -0.4:
-            flagged.append(log)
+    # Filter only pain points
+    pain_points = [entry for entry in logs if entry["sentiment"] == "negative" or entry["score"] < -0.4]
 
-    suggestions = []
-    for entry in flagged:
+    reflections = []
+    for entry in pain_points:
         suggestion = suggest_better_response(entry["content"])
         time = datetime.fromisoformat(entry["timestamp"]).strftime("%A %H:%M")
-        suggestions.append(
-            f"🕒 **{time}**\n"
-            f"💬 *\"{entry['content']}\"*\n"
-            f"💡 {suggestion}"
+        reflections.append(
+            f"🕒 **{time}**\n💬 *\"{entry['content']}\"*\n💡 {suggestion}"
         )
 
     return (
         f"🧘 **Your Weekly Mood Report**\n\n"
-        f"**Mood Distribution:**\n{mood_summary}\n\n"
-        f"**Situations to Reflect On:**\n"
-        + ("\n\n".join(suggestions) if suggestions else "✅ No major concerns this week — great job staying balanced!")
+        f"**Mood Summary:**\n{mood_summary}\n\n"
+        f"**Situations to Reflect On:**\n" +
+        ("\n\n".join(reflections) if reflections else "✅ No major concerns this week — great job!")
     )
 
-# ------------------ GPT-Powered Suggestion ------------------
+# -------------------- GPT Suggestion --------------------
 
 def suggest_better_response(text):
     prompt = (
-        f"A user wrote this message in a workplace chat:\n\n"
+        f"A user said this in a work chat:\n"
         f"\"{text}\"\n\n"
-        f"It sounds emotionally intense or negative. Give constructive, calm advice on how to express themselves better next time, "
-        f"and suggest a more professional way to handle the situation. Keep the tone warm and supportive. Reply in 2–3 sentences."
+        f"It feels emotionally intense. Suggest how they could reframe it in a calmer, more professional way. "
+        f"Keep it short (1-2 sentences), supportive, and clear."
     )
 
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful and friendly mental wellness assistant."},
+                {"role": "system", "content": "You are a supportive emotional wellness assistant."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
@@ -124,5 +96,30 @@ def suggest_better_response(text):
         )
         return response['choices'][0]['message']['content'].strip()
     except Exception as e:
-        print("❌ OpenAI API error:", e)
-        return "Try to stay calm and express your frustration constructively. It helps to explain the issue and suggest a solution."
+        print("❌ GPT Error:", e)
+        return "Try to pause and rephrase how you express frustration to avoid escalation."
+
+def get_team_summary(manager_id):
+    from roles import get_users_for_manager
+    users = get_users_for_manager(manager_id)
+    logs = load_logs()
+
+    # Filter logs to only the manager's users (last 7 days)
+    cutoff = datetime.utcnow() - timedelta(days=7)
+    relevant_logs = [
+        entry for entry in logs
+        if entry["user_id"] in users and datetime.fromisoformat(entry["timestamp"]) >= cutoff
+    ]
+
+    if not relevant_logs:
+        return "📉 No mood data from your team this week."
+
+    mood_counts = Counter(entry["sentiment"] for entry in relevant_logs)
+    total = sum(mood_counts.values())
+
+    # Get most dominant mood
+    most_common = mood_counts.most_common(1)[0]
+    label, count = most_common
+    percent = int((count / total) * 100)
+
+    return f"📊 Your team's overall feel is: **{percent}% {label.capitalize()}**"
