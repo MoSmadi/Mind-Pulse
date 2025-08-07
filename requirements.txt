@@ -1,1 +1,3 @@
-discord.js
+python-dotenv
+discord.py
+nltk
