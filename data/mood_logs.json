@@ -1,0 +1,1710 @@
+[
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:16:37.786230",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:03.064211",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:16.667131",
+    "content": "I'm feeling very frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:22:22.621466",
+    "content": "I'm feeling very very very very very frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.5768
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:42:08.956707",
+    "content": "I'm feeling really frustrated with this bug",
+    "sentiment": "negative",
+    "score": -0.4927
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:28.379095",
+    "content": "I am happy bro",
+    "sentiment": "positive",
+    "score": 0.5719
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:32.186088",
+    "content": "I am sad",
+    "sentiment": "negative",
+    "score": -0.4767
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:35.892671",
+    "content": "I have a bug",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:41.434090",
+    "content": "I have a new feature",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:48.460790",
+    "content": "I have bad team",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:43:52.992410",
+    "content": "I have good team",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:45:17.478955",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-06T20:51:30.000122",
+    "content": "https://platform.openai.com/api-keys",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:54:51.107148",
+    "content": "تدخلوا كول سريع؟",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:55:10.099258",
+    "content": "voice channel @here",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:56:28.578811",
+    "content": "<@977852503070740490> we are hearing u",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:56:42.641107",
+    "content": "zoom",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-07T09:57:12.826020",
+    "content": "https://restaurant365.zoom.us/j/96020017009",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:04:27.704643",
+    "content": "I’m having the best day ever!",
+    "sentiment": "positive",
+    "score": 0.6696
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:06:57.019878",
+    "content": "mabdulkareem@restaurant365.com",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:07:02.316415",
+    "content": "msmadi@restaurant365.com.",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:07:15.348957",
+    "content": "<@957722964676214856> pحط تاعك",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:01.859188",
+    "content": "bad message",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:04.608425",
+    "content": "normal message",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:07.827666",
+    "content": "hahahahah",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:09.554952",
+    "content": "memememem",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:14:16.264714",
+    "content": "f*******",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:15:16.014206",
+    "content": "f******* you",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:16:02.003173",
+    "content": "real-time detection of harmful behavior + instant calming DMs",
+    "sentiment": "positive",
+    "score": 0.4019
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:16:14.994026",
+    "content": "Detect if a message is:\n\n⚠️ Bullying, toxic, or aggressively negative\n\nBased on keywords + very low sentiment score",
+    "sentiment": "negative",
+    "score": -0.9061
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:19:53.944169",
+    "content": "You’re completely useless, I’m done with this crap",
+    "sentiment": "negative",
+    "score": -0.7264
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:20:24.088344",
+    "content": "You’re completely useless, I’m done with this crap",
+    "sentiment": "negative",
+    "score": -0.7264
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:33:42.577104",
+    "content": "<@994959988910985277>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:39:15.541485",
+    "content": "this could have been an email",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:18.650690",
+    "content": "hello",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:24.743747",
+    "content": "you are bad",
+    "sentiment": "negative",
+    "score": -0.5423
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:38.198779",
+    "content": "anyting is better",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:39:47.211704",
+    "content": "can we do better?",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:39:49.911404",
+    "content": "what a bloody code!",
+    "sentiment": "negative",
+    "score": -0.4926
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:01.589537",
+    "content": "shit",
+    "sentiment": "negative",
+    "score": -0.5574
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:36.546990",
+    "content": "oh god please no",
+    "sentiment": "neutral",
+    "score": 0.296
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:40:38.614397",
+    "content": "I love you",
+    "sentiment": "positive",
+    "score": 0.6369
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:40.351513",
+    "content": "what a good day",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:40:40.735826",
+    "content": "Good morning!",
+    "sentiment": "positive",
+    "score": 0.4926
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:43.791637",
+    "content": "its sunny today",
+    "sentiment": "positive",
+    "score": 0.4215
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:40:48.653116",
+    "content": "what agood code",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-07T13:40:51.075361",
+    "content": "Let's rock the day! Keep it up",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:40:54.203877",
+    "content": "i love my wife",
+    "sentiment": "positive",
+    "score": 0.6369
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:41:05.708749",
+    "content": "i hate my wife",
+    "sentiment": "negative",
+    "score": -0.5719
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:50:09.885349",
+    "content": "here <@994959988910985277>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T13:52:22.350205",
+    "content": "!helph",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T13:52:47.495994",
+    "content": "python bot.py",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T14:00:32.107199",
+    "content": "!weekly",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T14:00:47.149880",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T14:23:53.197939",
+    "content": "<@938081224864440331>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-07T14:28:03.542132",
+    "content": "standup",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T21:56:55.176473",
+    "content": "consent",
+    "sentiment": "neutral",
+    "score": 0.2263
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T21:57:17.456383",
+    "content": "this code is shit",
+    "sentiment": "negative",
+    "score": -0.5574
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-07T22:00:24.069409",
+    "content": "This is the dumbest idea ever, you’re useless.",
+    "sentiment": "negative",
+    "score": -0.7269
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:47:50.435889",
+    "content": "hello",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:47:57.693806",
+    "content": "you are dum",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:48:01.601194",
+    "content": "you are dumb",
+    "sentiment": "negative",
+    "score": -0.95
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-08T15:50:42.580175",
+    "content": "Working on the presentation yes.",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:51:00.800872",
+    "content": "presentation ?",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:51:37.098412",
+    "content": "@here\nفي حد مشغل عنده السيرفر ؟",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:51:53.618448",
+    "content": "عجهازه",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:51:58.275527",
+    "content": "بضل يعطيني داتا قديمة مع جديدة",
+    "sentiment": "negative",
+    "score": -0.6
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:52:08.780792",
+    "content": "تأكدولي بالله",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:52:53.233785",
+    "content": "مهو اوفلاين",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T15:54:14.183909",
+    "content": "اطلاقا",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:06:04.142932",
+    "content": "مش حاسس حالي بهاكاثون",
+    "sentiment": "negative",
+    "score": -0.6
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:06:26.048091",
+    "content": "اخرس يا كلب",
+    "sentiment": "negative",
+    "score": -1.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:06:46.991167",
+    "content": "شو هالكود الزبالة",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:15:59.258734",
+    "content": "شو هالكود الزبالة",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:16:24.589297",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:16:28.567785",
+    "content": "حازم روح كب الزبالة",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:16:55.294432",
+    "content": "ما هذا التصرف الغير لبق",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:17:06.107147",
+    "content": "لقد صدمتني بغباءك",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:18:44.668520",
+    "content": "fat guy",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:21:50.261848",
+    "content": "<@957722964676214856> خطرت ببالي فكرة",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:22:03.729780",
+    "content": "ضيفها عالفيديو والبريزنتيشن",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:22:08.863586",
+    "content": "انه احط كوماند مع هاد البوت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:22:36.045744",
+    "content": "يجبلي المنشنات اللي تمنشنتهم اليوم عشان اتاكد اني رديت عكلشي .. مع ريفرينس الهم عشان ارجعلهم",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:22:38.841052",
+    "content": "ولاي شو بتفيد",
+    "sentiment": "negative",
+    "score": -0.6
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:23:50.795945",
+    "content": "صهيب",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:23:51.450340",
+    "content": "انت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:23:52.461461",
+    "content": "واحد",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:23:55.128639",
+    "content": "ناصح",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:00.785019",
+    "content": "ومليان",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:04.664858",
+    "content": "وتافه",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:32.508013",
+    "content": "sohaib",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:33.117218",
+    "content": "you",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:33.962861",
+    "content": "are",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:34.571298",
+    "content": "such",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:35.169510",
+    "content": "a",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:24:46.938884",
+    "content": "fat stubid guy",
+    "sentiment": "negative",
+    "score": -0.95
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:06.101068",
+    "content": "sohaib",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:06.823984",
+    "content": "you",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:08.651145",
+    "content": "are",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:14.683911",
+    "content": "such",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:15.462881",
+    "content": "a",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:16.063387",
+    "content": "fat",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:17.402807",
+    "content": "stubid",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:25:20.503129",
+    "content": "guy",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:35.736371",
+    "content": "sohaib",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:36.331488",
+    "content": "you",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:37.056534",
+    "content": "are",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:37.672206",
+    "content": "such",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:38.916827",
+    "content": "a",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:39.522068",
+    "content": "jerk",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:44.046199",
+    "content": "and",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:41:47.634695",
+    "content": "bad",
+    "sentiment": "negative",
+    "score": -1.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:42:19.545179",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-08T16:42:20.176062",
+    "content": "gooooooooooooood",
+    "sentiment": "positive",
+    "score": 1.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:23.994667",
+    "content": "sohaib",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:24.717466",
+    "content": "and",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:25.304027",
+    "content": "hazem",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:28.540942",
+    "content": "you guys",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:31.594688",
+    "content": "are",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:33.003574",
+    "content": "the",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:34.232575",
+    "content": "most",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:47.533665",
+    "content": "unvaluable members",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:48.350003",
+    "content": "and",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:51.448053",
+    "content": "your",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:52.142434",
+    "content": "are",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:53.599805",
+    "content": "both",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T07:57:54.916329",
+    "content": "jerks",
+    "sentiment": "negative",
+    "score": -0.95
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T13:52:35.992977",
+    "content": "I wanna some one test this with me",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T13:52:36.568393",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T13:55:08.533611",
+    "content": "fix the damn code",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T13:59:17.569059",
+    "content": "اخرس يا كلب .. كودك زبالة",
+    "sentiment": "negative",
+    "score": -1.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T13:59:54.447771",
+    "content": "Scenario 5 — “Heated back-and-forth” across multiple users\nGoal: conversation window influences classification.\n\nHazem :\nWe missed the deadline again.\n\nSmadi:\nMaybe if you actually tested things, we wouldn't.\n\nHazem:\nWow. That's not fair.\n\nSmadi : \nWhatever. Fix it.\n\n\nExpected:\nCombined context should mark User A’s last message(s) as harmful or at least high negative.\nYou should get a DM with a calm rephrase suggestion.\nConsole logs show [HARM][AZURE] … is_harmful: true.",
+    "sentiment": "negative",
+    "score": -0.85
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:25:01.261501",
+    "content": "<@938081224864440331> <@977852503070740490> !!",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:25:04.154381",
+    "content": "Please send the pic to me",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T14:25:19.013201",
+    "content": "I dont have onw",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:25:34.857090",
+    "content": "I just need your face",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:25:39.577286",
+    "content": "the AI will convert it to cartoon",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T14:26:08.257135",
+    "content": "https://tenor.com/view/stare-into-camera-unamused-unsure-looney-tunes-one-froggy-evening-gif-17608403878255153362",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:27:28.330406",
+    "content": "SEND ANY PIC",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "994959988910985277",
+    "timestamp": "2025-08-09T14:43:33.072075",
+    "content": "<@655860593667866625>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T14:45:43.292778",
+    "content": "يلا",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T14:45:46.456424",
+    "content": "بصلي وباجي",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:34:49.559970",
+    "content": "1lemme giv you summary",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:39:57.116255",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:40:28.856429",
+    "content": "where?",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:40:38.123265",
+    "content": "the model you mean ?",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:40:41.126637",
+    "content": "Yes i can",
+    "sentiment": "positive",
+    "score": 0.4019
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:42:04.240768",
+    "content": "done",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:43:08.966391",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:45:39.057639",
+    "content": "yes, this is personal thing we can't just expose it",
+    "sentiment": "positive",
+    "score": 0.4843
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:45:52.854432",
+    "content": "the lead will know that the team is good or not",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:46:15.095027",
+    "content": "use the consent",
+    "sentiment": "neutral",
+    "score": 0.2263
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:46:22.503224",
+    "content": "and add harmefull context",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:46:30.276792",
+    "content": "i wanna shouw you how it change",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T19:46:32.820655",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:46:52.558818",
+    "content": "maybe my last changes",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:46:55.090357",
+    "content": "checking",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T19:59:06.052901",
+    "content": "fat stubid guy",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:05:21.509621",
+    "content": "check now",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:05:34.753628",
+    "content": "i think it will give you default message",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:05:43.009118",
+    "content": "you are fat",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:05:50.164922",
+    "content": "the open ai helth check is failing",
+    "sentiment": "negative",
+    "score": -0.5106
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:06:05.996134",
+    "content": "maybe they paused it today because it is saturday ?",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:06:08.293214",
+    "content": "that's good",
+    "sentiment": "positive",
+    "score": 0.4404
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:06:20.654264",
+    "content": "this is the default message",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:06:39.445206",
+    "content": "the USA are working today",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:07:02.990411",
+    "content": "no",
+    "sentiment": "neutral",
+    "score": -0.296
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:07:07.786588",
+    "content": "it is saturday",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:07:52.102056",
+    "content": "{'ok': False, 'why': 'RuntimeError: Azure OpenAI not configured. Check .env.'}",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:08:07.560095",
+    "content": "it was working with the same env yesterday",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:08:41.702514",
+    "content": "غريب",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:08:48.893801",
+    "content": "شوف يلي بستعملوه من التيمز الثانية",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:13:18.327489",
+    "content": "ok",
+    "sentiment": "neutral",
+    "score": 0.296
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:37:46.371632",
+    "content": "hazem fat stubid guy",
+    "sentiment": "negative",
+    "score": -0.95
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:38:19.599731",
+    "content": "",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:39:08.238736",
+    "content": "",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:39:13.768761",
+    "content": "try now <@957722964676214856>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:39:59.982051",
+    "content": "smadi is rude",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:40:08.310246",
+    "content": "يا حازم خلص اهلي !",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:40:29.801871",
+    "content": "حازم حل عني",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-09T20:40:36.174019",
+    "content": "صمادي بطول كتير ليرد عليي",
+    "sentiment": "negative",
+    "score": -0.6
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:40:39.513285",
+    "content": "عامي زيادة",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:40:52.943171",
+    "content": "برد بالاخر ؟",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:41:18.124642",
+    "content": "انت وصهيب",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:41:18.300129",
+    "content": "حازم يا اسوأ واحد بالمجرة",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:42:31.653125",
+    "content": "you and sohaib",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:42:31.667673",
+    "content": "hazem you are vey bad",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:42:37.245656",
+    "content": "include mayar too",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:43:27.879339",
+    "content": "testing now to see whay it is not sending me",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:07.017961",
+    "content": "hkj ,widf",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:07.131419",
+    "content": "حازم يا اسوأ واحد بالمجرة",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:07.742849",
+    "content": "انت وصهيب",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:35.570311",
+    "content": "",
+    "sentiment": "negative",
+    "score": -0.9
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:35.601615",
+    "content": "حازم خلص أهلي !",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:46:57.845247",
+    "content": "حازم رد عسماي",
+    "sentiment": "negative",
+    "score": -0.7
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:47:31.226333",
+    "content": "اسف بستخدم كلمات صعبة",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:47:32.094759",
+    "content": "بس هاد تيست",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T20:47:38.086793",
+    "content": "يا تيس",
+    "sentiment": "negative",
+    "score": -0.8
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:34:05.801427",
+    "content": "حازم غور من وجهي",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:34:24.593976",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:34:27.437486",
+    "content": "هيهيههيهيهيهيهي",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:34:37.973254",
+    "content": "حازم خلص أهلي !",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:35:06.257409",
+    "content": "😂 😂 😂 😂",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:35:12.447889",
+    "content": "حازم رد عسماي",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:35:38.234529",
+    "content": "حازم شكرا لحسن تذوقك",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:35:38.301312",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:37:28.146471",
+    "content": "<@977852503070740490> remove mayar as an admin pls",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:38:06.080007",
+    "content": "Done",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:38:06.388174",
+    "content": "thanks",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:38:08.309480",
+    "content": "ايري فيك",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:38:26.187102",
+    "content": "ليش",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:38:29.968175",
+    "content": "لا بتست البوت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:38:34.191557",
+    "content": "بشوف شو بفهم",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:38:43.858055",
+    "content": "بدي احذفها",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:38:43.979736",
+    "content": "😂😂😂😂😂",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:39:07.957491",
+    "content": "سكرين شوت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:39:14.736561",
+    "content": "لميار ؟",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:39:23.287141",
+    "content": "😂",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:39:31.536715",
+    "content": "ههههههههه لا للذكرى",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:39:46.233812",
+    "content": "عشو شغال صهييب",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:39:48.538564",
+    "content": "انصدمت انك بتحكي هيك مبسوط",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:40:06.453819",
+    "content": "مهو والله بدي اشوف لغة البوت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:40:09.019162",
+    "content": "ولا اشي حاليا بدي انام بكرة بشكيلك",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:40:18.353331",
+    "content": "ان شاء الله",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:40:57.040855",
+    "content": "[HARM][BURST] {'text': 'ايري فيك', 'decision': {'is_harmful': True, 'severity': 'high', 'language': 'ar', 'reason': 'Contains explicit sexual insult directed at a person.'}}",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:41:27.454765",
+    "content": "هيك فهمها البوت",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "977852503070740490",
+    "timestamp": "2025-08-09T21:41:38.040811",
+    "content": "هاد شات جيبي تي اخد على خاطرو عاد انا انبسطت 😂",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:45:19.538180",
+    "content": ".",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:51:48.490002",
+    "content": "<@938081224864440331>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-09T21:56:37.493580",
+    "content": "/mentions",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:13:54.219269",
+    "content": "<@957722964676214856> reply to this message",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:14:08.600579",
+    "content": "<@994959988910985277> mention me by name",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:14:29.231662",
+    "content": "<@977852503070740490> mention me by role",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:14:35.671748",
+    "content": "I love food",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:14:40.172061",
+    "content": "<@655860593667866625> good morning",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:17:41.095550",
+    "content": "<@938081224864440331>",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:17:47.492052",
+    "content": "please review those features",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:17:52.306322",
+    "content": "Now let’s dive into what MindPulse can actually do for your team…\n\nFirst — Real-time Mood Analysis.\nEvery day, MindPulse scans workplace conversations for emotional signals — whether they’re positive, negative, or somewhere in between.\nIt’s like a vibe check… but automated.\n\nSecond — Private Mood Summaries.\nEach user gets a personal mood report, sent privately, with tailored suggestions to help boost well-being.\nBecause sometimes… we all need a little nudge\n\nThird — Personalized Tips.\nFrom mindfulness exercises… to stress-busting techniques… and yes, even the occasional motivational meme\n\nFourth — Team Insights for Leaders.\nManagers get anonymized, aggregated mood reports — no names, no finger-pointing — just clear trends and actionable insights to help the entire team thrive.\nReports can be sent on demand… or weekly.\n\nBut that’s not all — MindPulse acts instantly when it detects trouble.\nIf an employee sends a message that signals high stress or frustration, MindPulse will gently send them a private DM warning — with tips to cool down before things escalate.\n\nEmployees can also get a list of all their recent mentions — making it easier to follow up on what matters most.\n\nAnd there’s more — with a growing library of slash commands to check moods, boost morale, and make workplace chats a little more… human.",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:18:54.133723",
+    "content": "again hazem",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:19:01.910200",
+    "content": "صمادي شوف المسج",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:19:03.858341",
+    "content": "بليز",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:19:04.474261",
+    "content": "and writemy name in a comment",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "957722964676214856",
+    "timestamp": "2025-08-10T07:19:18.824844",
+    "content": "عشان ابلش شغل",
+    "sentiment": "neutral",
+    "score": 0.0
+  },
+  {
+    "user_id": "938081224864440331",
+    "timestamp": "2025-08-10T07:40:10.946133",
+    "content": "",
+    "sentiment": "neutral",
+    "score": 0.0
+  }
+]

@@ -1,178 +1,296 @@
-import discord
+"""
+bot.py
+-------
+Discord client entrypoint for MindPulse.
+
+What this file does:
+- Initializes the Discord client (privileged intents) and slash commands.
+- Registers ephemeral slash commands:
+  /help, /consent, /logout, /weekly, /team, /myteam, /assign, /mention
+- Captures recent conversation context and logs context‑aware sentiment for consented users.
+- Triggers real-time harmful-behavior detection (DM coaching with cooldown).
+- Delegates all AI work to core/ai.py (centralized), not here.
+
+Notes:
+- For fast dev, set GUILD_ID in .env to sync commands instantly to one server.
+- Make sure the bot invite includes scope "applications.commands".
+"""
+
+
 import os
 from dotenv import load_dotenv
-from sentiment import analyze_sentiment
-from summary import log_mood
-from summary import generate_weekly_report
-from summary import suggest_better_response
-
-
-
-from consent import add_consent, remove_consent, has_consented
-
-# Load API keys
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-TRUSTED_ADMINS = ["938081224864440331"]
 
-# Debug print
-print("📦 Loaded Token:", "Yes ✅" if TOKEN else "❌ Missing!")
+import discord
+from discord import app_commands
 
-# Configure bot intents
+import asyncio
+
+# --- MindPulse modules ---
+from commands.consent import add_consent, remove_consent, has_consented
+from commands.assign import assign_user_to_manager, get_users_for_manager
+from commands.summary import handle_weekly_command  # DMs the weekly report
+from commands.monitor import detect_and_handle_harmful  # burst + context + cooldown
+from commands.mentions import run_mentions_command
+from core.context import ctx_store
+from core.sentiment import analyze_sentiment  # thin wrapper over core.ai.ai.sentiment()
+from core.analyzer import log_mood, get_team_summary
+from core.utils import ensure_dirs
+
+# -------------------------
+# Bootstrap & Intents
+# -------------------------
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+
+# Optional: limit slash-command sync to a single guild for instant availability
+GUILD_ID = os.getenv("GUILD_ID")  # e.g. "123456789012345678"
+GUILD = discord.Object(id=int(GUILD_ID)) if GUILD_ID else None
+
+# Privileged intents required for this bot’s features
 intents = discord.Intents.default()
-intents.message_content = True  # Needed to read messages
-intents.members = True          # Needed to fetch users later
+intents.message_content = True   # read messages for sentiment + monitoring
+intents.members = True           # resolve users for /myteam, /assign
 
-# Create Discord client
-client = discord.Client(intents=intents)
+class MindPulseClient(discord.Client):
+    """Discord client with an app commands tree attached."""
+    def __init__(self, *, intents: discord.Intents):
+        super().__init__(intents=intents)
+        self.tree = app_commands.CommandTree(self)
 
-# When bot starts
+client = MindPulseClient(intents=intents)
+
+# -------------------------
+# Helpers
+# -------------------------
+
+def _build_context_lines(message: discord.Message, limit: int = 15) -> list[str]:
+    """
+    Build a compact, recent conversation window for context-aware sentiment.
+    - Pulls last N messages from this channel via core.context.ctx_store.
+    - Marks lines as "You" vs "Other" relative to current author.
+    - Truncates lines to keep tokens under control.
+    - Adds replied-to message text (if any) at the end.
+    """
+    window = ctx_store.window(message.guild.id if message.guild else None,
+                              message.channel.id,
+                              limit=limit)
+    context: list[str] = []
+    for m in window:
+        speaker = "You" if m.author_id == message.author.id else "Other"
+        line = (m.content or "").strip().replace("\n", " ")
+        if len(line) > 200:
+            line = line[:200] + "…"
+        context.append(f"{speaker}: {line}")
+
+    # Include replied-to message content, if present
+    if message.reference and message.reference.resolved and isinstance(message.reference.resolved, discord.Message):
+        replied = message.reference.resolved
+        who = "Other" if replied.author.id != message.author.id else "You"
+        txt = (replied.content or "").strip().replace("\n", " ")
+        if len(txt) > 200:
+            txt = txt[:200] + "…"
+        context.append(f"{who} (replied): {txt}")
+
+    return context
+
+# -------------------------
+# Lifecycle
+# -------------------------
+
 @client.event
 async def on_ready():
-    print(f"✅ {client.user} is now online and connected!")
+    """Ensure folders exist and sync slash commands."""
+    ensure_dirs()
+    try:
+        if GUILD:
+            # Fast: guild-only sync during development
+            client.tree.copy_global_to(guild=GUILD)
+            synced = await client.tree.sync(guild=GUILD)
+            print(f"🛠️ Slash commands synced to guild {GUILD.id}: {len(synced)}")
+        else:
+            # Global sync can take up to ~1 hour
+            synced = await client.tree.sync()
+            print(f"🛠️ Global slash commands synced: {len(synced)} (may take ~1 hour to appear)")
+    except Exception as e:
+        print("❌ Slash command sync error:", e)
 
-# Listen for all messages
+    print(f"✅ {client.user} is online and ready!")
+
+# -------------------------
+# Slash Commands (ephemeral)
+# -------------------------
+
+@client.tree.command(name="help", description="Show available MindPulse commands")
+async def help_cmd(interaction: discord.Interaction):
+    help_text = (
+        "**📖 MindPulse Commands**\n"
+        "/consent — Opt in to mood tracking\n"
+        "/logout — Opt out of tracking\n"
+        "/weekly — DM your weekly mood report (with chart)\n"
+        "/team — (Managers) Your team’s overall mood % (last 7 days)\n"
+        "/myteam — (Managers) List your assigned users\n"
+        "/assign — (Admin) Assign ONE user to a manager\n"
+        "/mention — List your mentions for today or a specific date "
+    )
+    await interaction.response.send_message(help_text, ephemeral=True)
+
+@client.tree.command(name="consent", description="Opt in to MindPulse tracking")
+async def consent_cmd(interaction: discord.Interaction):
+    await interaction.response.defer(ephemeral=True)
+    user_id = str(interaction.user.id)
+    add_consent(user_id)
+    await interaction.followup.send("You're now opted in to MindPulse ✅", ephemeral=True)
+
+@client.tree.command(name="logout", description="Opt out of MindPulse tracking")
+async def logout_cmd(interaction: discord.Interaction):
+    await interaction.response.defer(ephemeral=True)
+    user_id = str(interaction.user.id)
+    remove_consent(user_id)
+    await interaction.followup.send("You've been unsubscribed from MindPulse 💤", ephemeral=True)
+
+@client.tree.command(name="weekly", description="Send me my weekly mood report (via DM)")
+async def weekly_cmd(interaction: discord.Interaction):
+    """
+    Ephemeral ack, then DM the weekly report (text is chunked; first DM may include a pie chart).
+    """
+    user_id = str(interaction.user.id)
+    if not has_consented(user_id):
+        await interaction.response.send_message("Please /consent first to enable reports.", ephemeral=True)
+        return
+
+    # Acknowledge immediately so the interaction doesn't time out
+    await interaction.response.send_message("📬 Check your DMs for your weekly report.", ephemeral=True)
+
+    # Minimal message-like shim so we can reuse handle_weekly_command(message, user_id)
+    class _Shim:
+        author = interaction.user
+        channel = interaction.channel
+        guild = interaction.guild
+        async def add_reaction(self, _):
+            pass
+
+    try:
+        await handle_weekly_command(_Shim(), user_id)
+    except Exception as e:
+        print("Weekly DM error:", e)
+
+@client.tree.command(name="team", description="(Managers) See your team’s overall mood %")
+async def team_cmd(interaction: discord.Interaction):
+    user_id = str(interaction.user.id)
+    summary = get_team_summary(user_id)
+    await interaction.response.send_message(summary, ephemeral=True)
+
+@client.tree.command(name="myteam", description="(Managers) List your assigned users")
+async def myteam_cmd(interaction: discord.Interaction):
+    """
+    Defer first (avoids 'Unknown interaction' if lookups take >3s), then follow up ephemerally.
+    """
+    user_id = str(interaction.user.id)
+    await interaction.response.defer(ephemeral=True)
+
+    try:
+        team_ids = get_users_for_manager(user_id)
+        if not team_ids:
+            await interaction.followup.send("👥 You have no assigned team members.", ephemeral=True)
+            return
+
+        names: list[str] = []
+        for uid in team_ids:
+            member = interaction.guild.get_member(int(uid)) if interaction.guild else None
+            if member:
+                names.append(member.display_name or member.name)
+            else:
+                try:
+                    u = await interaction.client.fetch_user(int(uid))
+                    names.append(getattr(u, "global_name", None) or u.name)
+                except Exception:
+                    names.append(f"(Unknown {uid})")
+
+        await interaction.followup.send("👥 Your team: " + ", ".join(names), ephemeral=True)
+
+    except Exception as e:
+        await interaction.followup.send("❌ Failed to load your team. Try again.", ephemeral=True)
+        print("myteam error:", e)
+
+@client.tree.command(name="assign", description="(Admin) Assign ONE user to a manager")
+@app_commands.describe(manager="Manager to assign to", user="User to add under this manager")
+async def assign_cmd(interaction: discord.Interaction, manager: discord.Member, user: discord.Member):
+    # (Optional) Enforce admin role/ID checks here
+    assign_user_to_manager(str(manager.id), str(user.id))
+    await interaction.response.send_message(
+        f"✅ Assigned **{user.display_name}** to manager **{manager.display_name}**.",
+        ephemeral=True
+    )
+
+@client.tree.command(name="mentions", description="List your mentions for today or a specific date")
+@app_commands.describe(date="Use 'today', 'yesterday', or YYYY-MM-DD")
+async def mentions_cmd(interaction: discord.Interaction, date: str | None = None):
+    # Instant ack so we never hit 10062
+    await interaction.response.send_message("🔎 Gathering your mentions…", ephemeral=True)
+
+    # Run the heavy work without blocking the event loop
+    async def _work():
+        from commands.mentions import run_mentions_command
+        await run_mentions_command(interaction, date_text=date)
+
+    # Don’t await here; do it in the background so the ack is immediate
+    asyncio.create_task(_work())
+
+
+# -------------------------
+# Passive Monitoring & Logging
+# -------------------------
+
 @client.event
-async def on_message(message):
-    # 🚫 Ignore bot's own messages to avoid self-replies
+async def on_message(message: discord.Message):
+    """
+    Passive pipeline for each message by consented users:
+    1) Add message to context store (per guild/channel).
+    2) Build compact context lines (You/Other).
+    3) Analyze sentiment (context-aware via core.ai).
+    4) Persist to weekly logs (core.analyzer.log_mood).
+    5) Trigger harmful-behavior detection (commands.monitor).
+    """
     if message.author == client.user:
         return
 
     user_id = str(message.author.id)
-
-    # ✅ Step 1: Opt-in command
-    if message.content.lower() == "!consent":
-        add_consent(user_id)
-        await message.channel.send(f"{message.author.name}, you've been added to MindPulse tracking ✅")
-        return
-
-    # ❌ Step 2: Opt-out command
-    if message.content.lower() == "!logout":
-        remove_consent(user_id)
-        await message.channel.send(f"{message.author.name}, you've been removed from tracking 💤")
-        return
-
-    # 📬 Step 3: Weekly report command
-    if message.content.lower() == "!weekly":
-        from summary import generate_weekly_report
-        report = generate_weekly_report(user_id)
-        try:
-            await message.author.send(report)
-            await message.channel.send("📬 Your weekly report has been sent via DM.")
-        except:
-            await message.channel.send("❌ I couldn't DM you. Check your privacy settings.")
-        return
-    
-    # Step X: Manager requests team summary
-    if message.content.lower() == "!team":
-        from summary import get_team_summary
-        manager_id = str(message.author.id)
-        summary = get_team_summary(manager_id)
-        await message.channel.send(summary)
-        return
-    
-    # ✅ Step: Assign users to a manager
-    if message.content.lower().startswith("!assign"):
-        if str(message.author.id) not in TRUSTED_ADMINS:
-            await message.channel.send("❌ You don’t have permission to run this command.")
-            return
-
-        if not message.mentions or len(message.mentions) < 2:
-            await message.channel.send("⚠️ Usage: `!assign @manager @user1 @user2 ...`")
-            return
-
-        from roles import assign_user_to_manager
-
-        manager = message.mentions[0]
-        users = message.mentions[1:]
-
-        for user in users:
-            assign_user_to_manager(str(manager.id), str(user.id))
-
-        user_names = ", ".join([user.name for user in users])
-        await message.channel.send(
-            f"✅ Assigned {user_names} to manager {manager.name}."
-        )
-        return
-    
-    if message.content.lower() == "!myteam":
-        from roles import get_users_for_manager
-        team = get_users_for_manager(str(message.author.id))
-        if not team:
-            await message.channel.send("👥 You don't manage anyone yet.")
-        else:
-            names = []
-            for uid in team:
-                user = await client.fetch_user(int(uid))
-                names.append(user.name)
-            await message.channel.send("👥 Your team: " + ", ".join(names))
-        return
-    
-    # 📖 Help command
-    if message.content.lower() == "!help":
-        help_text = (
-            "**📖 MindPulse Bot Commands**\n"
-            "`!consent` — Opt in to mood tracking\n"
-            "`!logout` — Opt out of tracking\n"
-            "`!weekly` — Get your weekly mood report via DM\n"
-            "`!team` — (Managers only) View overall mood of your team\n"
-            "`!myteam` — (Managers only) List your assigned team members\n"
-            "`!assign @manager @user1...` — (Admin only) Assign users to a manager\n"
-            "`!help` — Show this help message"
-        )
-        await message.channel.send(help_text)
-        return
-
-    # 🔒 Step 4: Only proceed if user has opted in
     if not has_consented(user_id):
         return
 
-    # 🧠 Step 5: Analyze sentiment of the message
-    from sentiment import analyze_sentiment
-    from summary import log_mood, suggest_better_response
-    sentiment = analyze_sentiment(message.content)
-    label = sentiment["label"]
-    score = sentiment["score"]
+    # 1) Add this message to the rolling context
+    ctx_store.add(
+        message.guild.id if message.guild else None,
+        message.channel.id,
+        message.author.id,
+        message.content or ""
+    )
 
-    # 🗂️ Step 6: Log the message to mood_logs.json
-    log_mood(user_id, message.content, sentiment)
+    # 2) Build context window for the AI
+    context_lines = _build_context_lines(message, limit=15)
 
-    # ⚠️ Step 7: Check if message is harmful
-    if is_harmful_message(message.content, score):
-        await send_calming_dm(message.author, message.content)
+    # 3) Context-aware sentiment (centralized via core.ai), off the event loop
+    import asyncio
+    sentiment_result = await asyncio.to_thread(
+        analyze_sentiment,
+        message.content or "",
+        context_lines=context_lines,
+    )
 
-    # 💬 Step 8: Send normal mood reflection as DM
-    try:
-        await message.author.send(
-            f"🧠 Your message felt **{label}** "
-            f"(score: {score:.2f}). Keep taking care of yourself 💙"
-        )
-    except Exception as e:
-        print(f"❌ Could not DM {message.author.name}: {e}")
+    # 4) Store for weekly reporting & team summaries
+    log_mood(user_id, message.content or "", sentiment_result)
 
+    # 5) Harmful-behavior detection (multilingual, burst-aware, DM with cooldown)
+    await detect_and_handle_harmful(message)
 
-# ✅ Harmful message detection
-def is_harmful_message(text, score):
-    aggressive_keywords = [
-        "idiot", "stupid", "shut up", "useless", "trash", "hate you", "wtf", "dumb",
-        "kill yourself", "nonsense", "disgusting", "worthless"
-    ]
-    lowered = text.lower()
-    keyword_hit = any(word in lowered for word in aggressive_keywords)
-    sentiment_hit = score < -0.6
-    return keyword_hit or sentiment_hit
+# -------------------------
+# Run
+# -------------------------
 
-# ✅ Calming response via GPT
-async def send_calming_dm(user, original_text):
-    try:
-        suggestion = suggest_better_response(original_text)
-        await user.send(
-            f"🧘 Hey {user.name}, I noticed your recent message felt a bit intense:\n\n"
-            f"💬 *\"{original_text}\"*\n\n"
-            f"{suggestion}\n\n"
-            f"Take a deep breath — you’ve got this. 💙"
-        )
-    except Exception as e:
-        print(f"❌ Couldn’t DM calming message to {user.name}: {e}")
+if __name__ == "__main__":
+    if not TOKEN:
+        print("❌ DISCORD_TOKEN missing in .env")
+        raise SystemExit(1)
 
-client.run(TOKEN)
+    client.run(TOKEN)
